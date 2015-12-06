@@ -1,0 +1,20 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Link Bin - Add Link</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="container">
+    <h1>Add Link</h1>
+    <form action="#" th:action="@{/link-bin/add}" method="post">
+        <div class="form-group">
+            <label for="url">URL: </label>
+            <input type="text" id="url" name="url" class="form-control" />
+        </div>
+        <input type="submit" />
+    </form>
+</div>
+</body>
+</html>
