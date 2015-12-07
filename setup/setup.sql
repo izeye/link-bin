@@ -1,0 +1,6 @@
+CREATE DATABASE db_link_bin CHARACTER SET utf8;
+
+GRANT ALL PRIVILEGES ON db_link_bin.* TO 'link_bin'@'%' IDENTIFIED BY '1234';
+GRANT ALL PRIVILEGES ON db_link_bin.* TO 'link_bin'@'localhost' IDENTIFIED BY '1234';
+
+FLUSH PRIVILEGES;
