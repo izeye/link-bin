@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface LinkService {
 	
-	List<Link> findAll();
+	List<Link> findAllInReverseOrder();
 	
 	void add(Link link);
 	

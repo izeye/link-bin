@@ -22,7 +22,7 @@ public class HomeController {
 	
 	@RequestMapping(path = "/list", method = RequestMethod.GET)
 	public String list(Model model) {
-		List<Link> links = linkService.findAll();
+		List<Link> links = linkService.findAllInReverseOrder();
 		model.addAttribute("links", links);
 		return "index";
 	}
