@@ -41,7 +41,7 @@ dependencies {
     compile("mysql:mysql-connector-java")
 //    runtime("com.h2database:h2")
 
-    provided("org.projectlombok:lombok:$lombokVersion")
+    provided("org.projectlombok:lombok")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
