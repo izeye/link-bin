@@ -1,11 +1,10 @@
 package com.izeye.linkbin.core.repository;
 
-import com.izeye.linkbin.Application;
 import com.izeye.linkbin.core.domain.Link;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,10 +15,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 /**
- * Created by izeye on 15. 12. 6..
+ * Tests for {@link LinkRepository}.
+ *
+ * @author Johnny Lim
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(Application.class)
+@SpringBootTest
 public class LinkRepositoryTests {
 	
 	@Autowired
